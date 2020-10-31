@@ -1,0 +1,12 @@
+//- Team Classic
+	@param {object} obj - data object
+	@param {string} obj.img - img of team
+	@param {string} obj.title - title of team
+	@param {string} obj.position - position of team
+mixin team-classic( obj )
+	.team.team-classic
+		.team-classic-figure
+			+img( obj.img )
+		.team-classic-caption
+			h6.team-classic-title= obj.title
+			p: a.team-classic-position(href='#')= obj.position

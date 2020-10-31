@@ -1,0 +1,45 @@
+//- Quote minimal
+	@param {object} obj - data object
+	@param {string} obj.text - text of quote
+	@param {string} obj.name - name of author
+	@param {string} obj.position - position of author
+mixin quote-minimal( obj, text )
+	.quote.quote-minimal
+		.quote-minimal-text.h3: q !{text}
+		.quote-minimal-author
+			h6= obj.name
+			p.text-primary= obj.position
+
+//- Quote with video
+	@param {object} obj - data object
+	@param {string} obj.img - quote img
+	@param {string} obj.text - quote text
+mixin quote-with-video( obj )
+	.quote.quote-with-video( style='background-image: url("images/' + obj.img + '");' )
+		.quote-with-video-header( data-lightgallery )
+			a.btn.btn-video.lightgallery-item( href='https://www.youtube.com/embed/OjNS4YjWILo' )
+				svg(width='16', height='19', viewBox='0 0 16 19',  xmlns='http://www.w3.org/2000/svg')
+					path(d='M15.5 9.5L0.499999 18.1603L0.5 0.839745L15.5 9.5Z')
+		.quote-with-video-body
+			.quote-with-video-text: q.h5= obj.text
+			ul.quote-meta
+				each item in obj.list
+					li= item
+					
+//- Quote Classic
+	@param {object} obj - data object
+	@param {string} obj.img - quote img
+	@param {string} obj.name - quote name
+	@param {string} obj.list - quote list meta
+mixin quote-classic( obj )
+	.quote.quote-classic
+		.quote-classic-text: q.h4= obj.text
+		.quote-classic-bottom
+			.media.align-items-center
+				if ( obj.img )
+					+img( obj.img ).quote-classic-figure
+				.media-body
+					h6=obj.name
+					ul.quote-meta
+						each item in obj.list
+							li= item

@@ -1,0 +1,187 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../base/mixins";
+@import "../bootstrap/scss/mixins";
+
+
+// Base
+.list {
+	.list,
+	> .list-item + .list-item {
+		margin-top: .19em;
+	}
+
+
+	a {
+		color: $body-color;
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+.list-link {
+	color: inherit;
+
+	&:hover {
+		color: $primary;
+	}
+}
+
+// list inline
+.list-inline-lg {
+	.list-inline-item:not(:last-child) {
+		margin-right: px-to-rem( 25px );
+	}
+}
+
+
+// List marked
+.list-marked {
+	> .list-item {
+		&::before {
+			display: inline-block;
+			vertical-align: middle;
+			content: '';
+			width: .38em;
+			height: .38em;
+			margin-right: .62em;
+			border-radius: 50%;
+			background-color: $gray-900;
+		}
+	}
+
+	.list-marked {
+		margin-left: 3em;
+	}
+}
+
+
+// List marked arrow
+.list-marked-arrow {
+	> .list-item {
+		&::before {
+			display: inline-block;
+			content: '\e901';
+			margin-right: 1.29em;
+			font-size: .88em;
+			font-family: 'Intense Icons';
+			text-indent: 0;
+		}
+	}
+
+	.list-marked-arrow {
+		margin-left: 2.9em;
+	}
+}
+
+
+// Ordered
+.list-ordered {
+	counter-reset: li;
+
+	> .list-item {
+		&::before {
+			content: counters(li,".")".";
+			counter-increment: li;
+			font-weight: 500;
+			margin-right: .8em;
+		}
+	}
+
+	.list-ordered {
+		margin-left: 2.3em;
+	}
+}
+
+
+// Spacing
+h6 + .list {
+	margin-top: px-to-rem( 22px );
+}
+
+// List contact
+.list-contact {
+	font-weight: 400;
+	color: $gray-900;
+
+	.list-contact-link {
+		color: inherit;
+	}
+}
+
+.list-contact-link {
+	white-space: nowrap;
+
+	&:hover {
+		color: $primary;
+	}
+}
+
+
+// List divided
+.list-divided {
+	> .list-item + .list-item {
+		margin-top: 9px;
+		padding-top: 8px;
+		border-top: 1px solid $border-color;
+	}
+}
+
+
+// Contexts
+.context-dark {
+	.list-marked {
+		> .list-item::before {
+			background: $white;
+		}
+	}
+
+	.list-contact {
+		color: inherit;
+	}
+}
+
+// social icon list
+.social-icon-list {
+	a {
+		font-size: px-to-rem( 22px );
+		line-height: px-to-rem( 22px );
+		color: $dark;
+		
+		&:hover {
+			color: $primary;
+		}
+	}
+}
+
+
+// list context in footer
+.footer {
+	.list {
+		font-size: px-to-rem( 18px );
+		line-height:  px-to-rem( 40px );
+		
+		> * + * {
+			margin-top: 0;
+		}
+	}
+}
+
+
+// list terms
+.list-terms {
+	dt + dd {
+		margin-top: 10px;
+	}
+	
+	dd + dt {
+		margin-top: 35px;
+	}
+}
+
+* + .list-terms {
+	margin-top: 50px;
+}

@@ -1,0 +1,99 @@
+// Card classic
+.card-classic {
+	position: relative;
+	padding: 50px 20px;
+
+	
+	@include media-breakpoint-up(md) {
+		padding: 65px 30px;
+	}
+	
+	@include media-breakpoint-up(lg) {
+		padding: 90px 30px;
+	}
+	
+	@include media-breakpoint-up(xl) {
+		padding: 110px 30px;
+	}
+}
+
+.card-classic-figure {
+	position: absolute;
+	bottom: 50px;
+	right: 50px;
+	text-align: right;
+
+	svg {
+		opacity: .25;
+		
+		> * {
+			fill: $dark;
+		}
+	}
+	
+	@include media-breakpoint-up(md){
+		svg {
+			opacity: 1;
+		}
+	}
+}
+
+.card-classic-subtitle {
+	text-transform: uppercase;
+	font-size: px-to-rem( 15px );
+	font-weight: 500;
+	color: $primary;
+}
+
+* + .card-classic-title,
+.card-classic-title + * {
+	margin-top: px-to-rem( 20px );
+}
+
+
+.card-classic-body {
+	max-width: 390px;
+	margin-left: auto;
+	margin-right: auto;
+	
+	* + .btn {
+		margin-top: px-to-rem( 44px );
+	}
+}
+
+
+// color themes
+.card-classic-gray-100 {
+	background: $gray-100;
+}
+
+.card-classic-primary {
+	background: $primary;
+	color: $white;
+
+	.card-classic-subtitle {
+		color: $white;
+	}
+
+	.card-classic-figure {
+		svg {
+			> * {
+				fill: $white;
+			}
+		}
+	}
+	
+	a {
+		color: $white;
+		&:hover {
+			color: $white;
+			text-decoration: underline;
+		}
+	}
+	.btn {
+		&:hover {
+			color: $dark;
+			text-decoration: none;
+		} 
+	}
+}

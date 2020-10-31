@@ -1,0 +1,75 @@
+extends ../base/_skeleton
+
+include ../rd-navbar/_rd-navbar
+
+block variables
+	- pageName = 'Forms';
+
+block page
+	+rd-navbar
+	
+	section.section.section-xxl.bg-dark.context-dark.parallax-js.parallax-js-box-1
+		.parallax-js-element-19: .layer( data-depth='.1' )
+			img(src="images/pjs-element-1.svg", alt="")
+		.parallax-js-element-20: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-2.svg", alt="")
+		.parallax-js-element-21: .layer( data-depth='.1' )
+			img(src="images/pjs-element-1.svg", alt="")
+		.parallax-js-element-22: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-2.svg", alt="")
+		.container
+			.row.row-50.justify-content-center
+				.col-lg-7.col-xl-6
+					p We’re here to help. If you can’t find the right speaker you need, or would like speaker ideas tailored to your event, contact us.
+
+					// RD Mailform
+					form.rd-mailform.text-left.row.row-50( data-form-output='form-output-footer-store', data-form-type='subscribe', method='post', action='components/rd-mailform/rd-mailform.php' )
+						.col-sm-6
+							.form-wrap
+								input.form-control(type="email" name="email" placeholder='Your email here...' data-constraints="@Email @Required")
+						.col-sm-6
+							.form-wrap
+								input.form-control(type="text" name="name" placeholder='Your name here...' data-constraints='@Required')
+						.col-12
+							.form-wrap.select-wrap
+								select.select2( id='simple-select', name='interested', data-select2-options!={placeholder: 'Your are interested in...'} )
+									option( label='placeholder' )
+									option Marketing
+									option Finance
+									option Management
+									option Leadership
+									option Fulfillment
+
+
+						.col-12
+							button(type="submit").btn.btn-primary.btn-block Send
+	
+	section.section.section-xl.bg-gray-100
+		.container
+			.row.row-50.justify-content-center
+				.col-lg-7.col-xl-6
+					p We’re here to help. If you can’t find the right speaker you need, or would like speaker ideas tailored to your event, contact us.
+
+					// RD Mailform
+					form.rd-mailform.text-left.row.row-50( data-form-output='form-output-footer-store', data-form-type='subscribe', method='post', action='components/rd-mailform/rd-mailform.php' )
+						.col-sm-6
+							.form-wrap
+								input.form-control(type="email" name="email" placeholder='Your email here...' data-constraints="@Email @Required")
+						.col-sm-6
+							.form-wrap
+								input.form-control(type="text" name="name" placeholder='Your name here...' data-constraints='@Required')
+						.col-12
+							.form-wrap.select-wrap
+								select.select2( id='simple-select2', name='interested', data-select2-options!={placeholder: 'Your are interested in...'} )
+									option( label='placeholder' )
+									option Marketing
+									option Finance
+									option Management
+									option Leadership
+									option Fulfillment
+
+
+						.col-12
+							button(type="submit").btn.btn-primary.btn-block Send
+							
+	include ../footer/_footer-classic

@@ -1,0 +1,61 @@
+-
+	var
+		logo = {
+			default: 'logo-default-198x57.svg',
+			inverse: 'logo-default-198x57.svg',
+			name: 'FinUp'
+		},
+
+		buyLink = 'https://www.templatemonster.com/intense-multipurpose-html-template.html',
+
+		menu = {
+			type: 'root',
+			child: [
+				{
+					title: 'Home',
+					link: 'index.html', 
+					home: true
+					
+				},
+
+				{
+					title: 'About'
+				},
+				
+				{
+					title: 'Solutions'
+				},
+			
+				{
+					title: 'Client Stories'
+				},
+
+				{
+					title: 'Contacts'
+				},
+
+				{
+					title: 'Pages',
+					link: '#',
+					child: {
+						type: 'dropdown',
+						title: 'Pages',
+						class: 'navbar-dark',
+						child: [
+						{ title: '404 Page' },
+						{ title: 'Buttons' },
+						{ title: 'Forms' },
+						{ title: 'Privacy Policy' }
+						]
+					}
+				}
+			]
+		},
+
+		homePage,
+		pageName,
+		pageId,
+		pageClass,
+		pageImage,
+		htmlClass,
+		breadcrumbs = [];

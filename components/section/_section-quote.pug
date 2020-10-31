@@ -1,0 +1,21 @@
+include ../quote/_quote
+
+section.section.bg-dark.section-xl.context-dark.parallax-js.parallax-js-box-1
+	.parallax-js-element-8: .layer( data-depth='-.1' )
+		img(src="images/pjs-element-7.svg", alt="")
+	.container
+		.row.row-40.justify-content-between
+			.col-lg-6.col-xl-5
+				h2 Request a free coaching session.
+				p.text-medium-size.text-primary.font-weight-medium Take the first step today.
+				p We receive payment and usually work on a fixed schedule to share actionable feedback, personalized advice, and growth plans for our clients to increase their company revenue. 
+				a.btn.btn-primary( href='#' ) Get Started
+			.col-lg-6
+				.pl-xl-4
+					+quote-classic({
+						img: 'user-1-60x60',
+						text: 'Unique content that explores beneath the surface of coaching and offers great functional tools that deconstruct each concept making it easy to absorb, process and practice.',
+						name: 'John Doe',
+						list: ['CEO','Advance Ltd.','Dallas, TX']
+					})  
+					

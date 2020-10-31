@@ -1,0 +1,45 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../base/mixins";
+@import "../bootstrap/scss/mixins";
+
+//footer classic
+.footer-classic {
+	
+}
+
+.footer-classic-form {
+	h6 + .form-inline-custom {
+		margin-top: px-to-rem(7px);
+	}
+}
+
+* + .footer-classic-form {
+	margin-top: px-to-rem( 50px);
+}
+
+.footer-classic-bottom {
+	padding-top: px-to-rem( 70px );
+
+	@include media-breakpoint-up( lg ) {
+		padding-top: px-to-rem( 85px );
+	}
+
+	@include media-breakpoint-up( xl ) {
+		padding-top: px-to-rem( 100px );
+	}
+
+	@include media-breakpoint-up( xxl ) {
+		padding-top: px-to-rem( 120px );
+	}
+}
+
+@include media-breakpoint-up( xl ) {
+	* + .footer-classic-form {
+		margin-top: px-to-rem( 70px);
+	}
+}
+
+

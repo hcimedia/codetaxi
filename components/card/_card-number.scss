@@ -1,0 +1,40 @@
+// card number
+.card-number {
+	padding: 40px 20px 50px;
+	background: $white;
+	box-shadow: $box-shadow-sm-2;
+}
+
+.card-number-body {
+	max-width: 300px;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.card-number-category {
+	font-size: px-to-rem( 15px );
+	text-transform: uppercase;
+	color: $primary;
+}
+
+.card-number-num {
+	position: relative;
+	
+	&:before {
+		position: absolute;
+		content: url("../../images/line.svg");
+		bottom: -10px;
+	}
+}
+
+* + .card-number-category {
+	margin-top: px-to-rem(27px);
+}
+
+* + .card-number-title {
+	margin-top: 10px;
+}
+
+.card-number-title + *{
+	margin-top: 15px;
+}

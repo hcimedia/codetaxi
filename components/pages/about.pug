@@ -1,0 +1,182 @@
+extends ../base/_skeleton
+
+include ../rd-navbar/_rd-navbar
+include ../card/_card
+include ../team/_team
+include ../quote/_quote
+
+block variables
+	- pageName = 'About';
+
+block page
+
+	+rd-navbar
+	
+	section.section.section-xxl.bg-primary.parallax-js.parallax-js-box-1.context-dark
+		.parallax-js-element-9: .layer( data-depth='.1' )
+			img(src="images/pjs-element-1.svg", alt="")
+		.parallax-js-element-10: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-2.svg", alt="")
+		.parallax-js-element-11: .layer( data-depth='.1' )
+			img(src="images/pjs-element-1.svg", alt="")
+		.parallax-js-element-12: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-2.svg", alt="")
+		.parallax-js-element-13: .layer( data-depth='.1' )
+			img(src="images/pjs-element-8.svg", alt="")
+		.container
+			.row.justify-content-center
+				.col-lg-9.text-center
+					h1 Transforming business one owner at a time.
+					p.block.block-lg.block-center Learn how our business coaches can get your business back on its way to success and prosperity.
+
+	section.section.section-xl.bg-white
+		.container
+			.row.row-50.flex-lg-row-reverse
+				.col-lg-6.col-xl-7
+					.figure.figure-position-1
+						+img('about-1-745x687')
+				.col-lg-6.col-xl-5
+					h2 Helping owners build businesses that work since 1977.
+					p Whether you’re a business professional struggling to earn a promotion or an entrepreneur unsure of your next move, the right business coach can set you on a lucrative path to success.
+					a.btn.btn-primary( href='#' ) Get Started
+				
+	section.section.section-xl.bg-gray-100.section-special-2.parallax-js.parallax-js-box-1.section-special-2-dark.bg-transparent
+		.parallax-js-element-14: .layer( data-depth='.1' )
+			img(src="images/image-01-270x290.svg", alt="")
+		.container
+			.row.justify-content-center.row-xl-70.row-50
+				.col-lg-9.text-center
+					h2 We're here for you and your business—every step of the way.
+					p.block.block-lg.block-center Business coaching can be the single greatest investment you make in your career or business.
+				.col-sm-6.col-lg-4
+					+card-nubmer({
+						num: '01',
+						category: 'STAGE ONE',
+						title: 'Discovering Your Company',
+						text: 'Business coaches start by learning everything that they can about your brand, including its challenges.'
+					})
+				.col-sm-6.col-lg-4
+					+card-nubmer({
+						num: '02',
+						category: 'STAGE two',
+						title: 'Your Business Vision',
+						text: 'After that, your business coach will learn more about your vision for your company and its goals.'
+					})
+				.col-sm-6.col-lg-4
+					+card-nubmer({
+						num: '03',
+						category: 'STAGE Three',
+						title: 'Setting New Goals',
+						text: 'Next, a business coach will work with you to set beneficial and attainable goals for your team.'
+					})
+					
+					
+	section.section.section-xl.bg-dark.bg-transparent.context-dark.parallax-js.parallax-js-box-1.parallax-js-box-2
+		.parallax-js-element-15: .layer( data-depth='.1' )
+			img(src="images/pjs-element-9.svg", alt="")
+		.container
+			.row.row-50.row-md-60
+				.col-md-6.col-lg-5
+					h2 The Seven Essential Systems
+					p Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+					
+					.figure.figure-parallax.d-none.d-md-block
+						+img('about-2-290x280.svg')( data-parallax={ rate: -50 } )
+				.col-md-6.col-lg-7
+					.row.row-50
+						.col-lg-6
+							.media-list
+								.media.media-md.align-items-baseline
+									+img('arrow.svg')
+									.media-body
+										h5 Marketing
+										p.mt-1.text-medium Est pellentesque elit ullamcorper dignissim.
+								.media.media-md.align-items-baseline
+									+img('arrow.svg')
+									.media-body
+										h5 Management
+										p.mt-1.text-medium Et tortor at risus viverra adipiscing.
+								.media.media-md.align-items-baseline
+									+img('arrow.svg')
+									.media-body
+										h5 Lead Generation
+										p.mt-1.text-medium Cursus risus at ultrices mi tempus. 
+								.media.media-md.align-items-baseline
+									+img('arrow.svg')
+									.media-body
+										h5 Fulfillment
+										p.mt-1.text-medium Eu scelerisque felis imperdiet proin fermentum.
+						.col-lg-6
+							.media-list
+								.media.media-md.align-items-baseline
+									+img('arrow.svg')
+									.media-body
+										h5 Finance
+										p.mt-1.text-medium Facilisi morbi tempus iaculis urna id volutpat.
+								.media.media-md.align-items-baseline
+									+img('arrow.svg')
+									.media-body
+										h5 Leadership
+										p.mt-1.text-medium Nisl suscipit adipiscing bibendum est ultricies.
+								.media.media-md.align-items-baseline
+									+img('arrow.svg')
+									.media-body
+										h5 Lead Conversion
+										p.mt-1.text-medium A condimentum vitae sapien pellentesque habitant morbi.
+		
+										
+	section.section.section-custom-2.bg-white.parallax-js.parallax-js-box-1
+		.parallax-js-element-16: .layer( data-depth='.1' )
+			img(src="images/pjs-element-10.svg", alt="")
+		.parallax-js-element-17: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-11.svg", alt="")
+		.container
+			h2 Meet our coaches
+			.row.row-50.row-xl-80
+				.col-sm-6.col-lg-4
+					+team-classic({
+						img: 'team-1-400x414',
+						title: 'Earl Parker',
+						position: 'Business Coach'
+					})
+				.col-sm-6.col-lg-4
+					+team-classic({
+						img: 'team-2-400x414',
+						title: 'Albert Hughes',
+						position: 'Executive Coach'
+					})
+				.col-sm-6.col-lg-4
+					+team-classic({
+						img: 'team-3-400x414',
+						title: 'Brian Torres',
+						position: 'Leadership Coach'
+					})
+				.col-sm-6.col-lg-4
+					+team-classic({
+						img: 'team-4-400x414',
+						title: 'Howard Price',
+						position: 'Business Coach'
+					})
+				.col-sm-6.col-lg-4
+					+team-classic({
+						img: 'team-5-400x414',
+						title: 'Roger Jenkins',
+						position: 'Business Coach'
+					})
+				
+	
+					
+	section.section.section-xl.bg-dark.bg-transparent.context-dark
+		.container
+			.row.row-30.justify-content-end
+				.col-lg-6.col-xl-5
+					+quote-classic({
+						text: 'Aliquam quis dictum ante. Cras iaculis eu quam consectetur, ut sodales lectus amet hendrerit. Vestibulum at efficitur justo congueuis tempor ipsum.',
+						name: 'John Doe',
+						list: ['CEO', 'Advance Ltd.', 'Dallas, TX']
+					})
+				.col-lg-6.text-center.text-lg-right
+					.figure-position-2
+						+img('about-3-515x638')
+	
+	include ../footer/_footer-classic

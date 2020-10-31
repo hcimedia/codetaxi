@@ -1,0 +1,64 @@
+// Post minimal
+.post-minimal {
+	position: relative;
+	box-shadow: $box-shadow-sm;
+	transition: $transition-base;
+	
+	&:hover {
+		box-shadow: none;
+		
+		.post-minimal-caption {
+			background: $primary;
+		}
+
+		.post-minimal-category {
+			color: $white;
+		}
+		
+		.post-minimal-title a{
+			color: $white;
+		}
+	}
+}
+
+.post-minimal-caption {
+	padding: px-to-rem(30px);
+	background: $white;
+	transition: $transition-base;
+	
+	* + * {
+		margin-top: 10px;
+	}
+	
+	* {
+		transition: $transition-base;
+	}
+}
+.post-minimal-figure {
+	img {
+		width: 100%;
+	}
+}
+
+.post-minimal-category {
+	color: $primary;
+	font-size: px-to-rem( 15px );
+	text-transform: uppercase;
+	font-weight: 500;
+}
+
+.post-minimal-title a{
+	&:hover {
+		color: $white;
+		text-decoration: underline;
+	} 
+}
+
+
+//post minimal context in owl
+.owl-carousel.owl-style-1 {
+	.post-minimal {
+		margin-left: 30px;
+		margin-right: 30px;
+	}
+}

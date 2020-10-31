@@ -1,0 +1,285 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../base/mixins";
+@import "../bootstrap/scss/mixins";
+
+// Base
+.parallax-js {
+	overflow: hidden; 
+	
+	&.parallax-js-box-2 {
+		overflow: visible;
+	}
+}
+
+.layer {
+	position: relative !important;
+}
+
+.parallax-js-box-1 {
+	position: relative;
+	
+	[class*='parallax-js-element'] {
+		display: none;
+	}
+	
+	@include media-breakpoint-up(xl) {
+
+		[class*='parallax-js-element'] {
+			position: absolute;
+			display: block;
+		}
+
+		.parallax-js-element-1 {
+			top: 30%;
+			left: 0;
+		}
+
+		.parallax-js-element-2 {
+			top: 10%;
+			left: 10%;
+		}
+
+		.parallax-js-element-3 {
+			top: 5%;
+			right: 1%;
+		}
+
+		.parallax-js-element-4 {
+			top: 37%;
+			right: 1%;
+		}
+		
+		.parallax-js-element-5 {
+			top: 39%;
+			left: calc( 50vw + 100px );
+			
+			img {
+				width: 60%;
+			}
+		}
+
+		.parallax-js-element-6 {
+			top: 13%;
+			left: 2%;
+		}
+
+		.parallax-js-element-7 {
+			top: 13%;
+			right: 2%;
+		}
+
+		.parallax-js-element-6,
+		.parallax-js-element-7 {
+			img {
+				width: 70%;
+			}
+		}
+
+		.parallax-js-element-8 {
+			bottom: 6%;
+			right: 4%;
+		}
+
+		.parallax-js-element-9 {
+			left: 9%;
+			top: 55%;
+		}
+
+		.parallax-js-element-10 {
+			left: 12%;
+			top: 25%;
+		}
+
+		.parallax-js-element-11 {
+			right: 12%;
+			top: 30%;
+		}
+
+		.parallax-js-element-12 {
+			right: 8%;
+			top: 50%;
+		}
+		
+		.parallax-js-element-13 {
+			left: 50%;
+			top: 13%;
+			transform: translateX(-50%);
+		}
+
+
+		.parallax-js-element-14 {
+			right: 2%;
+			top: 17%;
+			text-align: right;
+			
+			img {
+				width: 60%;
+			}
+		}
+
+		.parallax-js-element-15 {
+			top: -15%;
+			right: -10%;
+		}
+
+		.parallax-js-element-16 {
+			bottom: 13%;
+			right: -2%;
+		}
+
+		.parallax-js-element-17 {
+			bottom: 11%;
+			left: calc( 50vw + 300px );
+		}
+
+		.parallax-js-element-18 {
+			top: 15%;
+			left: calc( 50vw + 470px );
+		}
+		
+		.parallax-js-element-19 {
+			left: 0;
+			bottom: 17%;
+		}
+
+		.parallax-js-element-20 {
+			left: 2%;
+			top: 12%;
+		}
+
+		.parallax-js-element-21 {
+			right: 3%;
+			top: 11%;
+		}
+
+
+		.parallax-js-element-22 {
+			right: 3%;
+			bottom: 13%;
+		}
+	}
+
+	@include media-breakpoint-up(xxl) {
+		.parallax-js-element-1 {
+			left: 7%;
+		}
+
+		.parallax-js-element-3 {
+			right: 4%;
+		}
+
+		.parallax-js-element-4 {
+			top: 41%;
+			right: 4%;
+		}
+
+		.parallax-js-element-5 {
+			top: 32%;
+			
+			img {
+				width: 100%;
+			}
+		}
+
+		.parallax-js-element-8 {
+			bottom: 10%;
+			right: 7%;
+		}
+
+		.parallax-js-element-15 {
+			right: -2%;
+		}
+
+		.parallax-js-element-16 {
+			right: 2%;
+		}
+	}
+	
+	@include media-breakpoint-up(xxxl) {
+		.parallax-js-element-5 {
+			left: calc( 50vw + 80px );
+		}
+		.parallax-js-element-3 {
+			right: 12%;
+		}
+
+		.parallax-js-element-6 {
+			left: 5%;
+		}
+
+		.parallax-js-element-7 {
+			right: 5%;
+		}
+		
+		.parallax-js-element-6,
+		.parallax-js-element-7 {
+			img {
+				width: 100%;
+			}
+		}
+
+		.parallax-js-element-8 {
+			bottom: 12%;
+			right: 10%;
+		}
+
+		.parallax-js-element-9 {
+			left: 12%;
+		}
+
+		.parallax-js-element-10 {
+			left: 15%;
+		}
+
+		.parallax-js-element-11 {
+			right: 16%;
+		}
+
+		.parallax-js-element-12 {
+			right: 11%;
+		}
+
+		.parallax-js-element-14 {
+			right: 7%;
+			top: 12%;
+			text-align: right;
+
+			img {
+				width: 100%;
+			}
+		}
+
+		.parallax-js-element-15 {
+			right: 4%;
+		}
+
+		.parallax-js-element-16 {
+			bottom: 19%;
+			right: 9%;
+		}
+
+
+		.parallax-js-element-19 {
+			left: calc( 50vw - 800px );
+			bottom: 17%;
+		}
+
+		.parallax-js-element-20 {
+			left: calc( 50vw - 730px );
+		}
+
+		.parallax-js-element-21 {
+			right:  calc( 50vw - 730px );
+			top: 20%;
+		}
+
+
+		.parallax-js-element-22 {
+			right: calc( 50vw - 830px );
+			bottom: 19%;
+		}
+	}
+}

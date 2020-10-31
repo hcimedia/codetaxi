@@ -1,0 +1,16 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../base/mixins";
+@import "../bootstrap/scss/mixins";
+@import "../bootstrap/scss/card";
+
+//base
+.card {
+	border: none;
+	border-radius: 0;
+}
+
+@import "card-classic";
+@import "card-number";

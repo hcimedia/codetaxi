@@ -1,0 +1,32 @@
+extends ../base/_skeleton
+
+include ../rd-navbar/_rd-navbar
+
+block variables
+	- pageName = '404 Page';
+
+block page
+	+rd-navbar
+	
+	section.section.section-xxl.bg-gray-100.text-center.parallax-js.parallax-js-box-1
+		.parallax-js-element-9: .layer( data-depth='.1' )
+			img(src="images/pjs-element-13.svg", alt="")
+		.parallax-js-element-10: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-14.svg", alt="")
+		.parallax-js-element-11: .layer( data-depth='.1' )
+			img(src="images/pjs-element-13.svg", alt="")
+		.parallax-js-element-12: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-14.svg", alt="")
+		.parallax-js-element-13: .layer( data-depth='.1' )
+			img(src="images/pjs-element-11.svg", alt="")
+		.container
+			.row.justify-content-center
+				.col-md-8.col-lg-6
+					h1 Error 404 :(
+					h4 Sorry, but page was not found
+					p You may have mistyped the address or the page may have moved.
+					.group-10.mt-4
+						a.btn.btn-primary( href='index.html' ) Back to home
+						a.btn.btn-secondary( href='contacts.html' ) Contact us
+	
+	include ../footer/_footer-classic

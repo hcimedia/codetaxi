@@ -1,0 +1,66 @@
+@import "../bootstrap/scss/functions";
+@import "../base/functions";
+@import "../base/variables";
+@import "../bootstrap/scss/variables";
+@import "../bootstrap/scss/mixins";
+
+
+// Variables
+$fig-caption-fsz: $font-size-base * .71;
+
+
+// Base
+.figure-position-1 {
+	@include media-breakpoint-up(xl){
+		margin-top: -170px;
+	}
+
+	@include media-breakpoint-up(xxl){
+		margin-top: -210px;
+	}
+}
+
+
+.figure-position-2 {
+	@include media-breakpoint-up(xl){
+		margin-top: -250px;
+	}
+
+	@include media-breakpoint-up(xxxl){
+		margin-top: -285px;
+	}
+}
+
+* + .figure-position-3 {
+	margin-top: 35px;
+	
+	@include media-breakpoint-up( lg ) {
+		margin-top: 45px;
+	}
+
+	@include media-breakpoint-up( xl ) {
+		margin-top: 55px;
+	}
+}
+
+
+* + .figure-parallax {
+	margin-top: 60px;
+	
+	@include media-breakpoint-up(lg) {
+		margin-top: 85px;
+	}
+	
+	@include media-breakpoint-up(xl) {
+		margin-top: 120px;
+	}
+}
+
+
+.figure-hover {
+	transition: $transition-base;
+	
+	&:hover {
+		opacity: .7;
+	} 
+}

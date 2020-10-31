@@ -1,0 +1,92 @@
+extends ../base/_skeleton
+
+include ../rd-navbar/_rd-navbar
+include ../quote/_quote
+
+block variables
+	- pageName = 'Client Stories';
+
+block page
+
+	+rd-navbar
+	
+	section.section.section-xxl.bg-gray-100.parallax-js.parallax-js-box-1
+		.parallax-js-element-9: .layer( data-depth='.1' )
+			img(src="images/pjs-element-13.svg", alt="")
+		.parallax-js-element-10: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-14.svg", alt="")
+		.parallax-js-element-11: .layer( data-depth='.1' )
+			img(src="images/pjs-element-13.svg", alt="")
+		.parallax-js-element-12: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-14.svg", alt="")
+		.parallax-js-element-13: .layer( data-depth='.1' )
+			img(src="images/pjs-element-11.svg", alt="")
+		.container
+			.row.justify-content-center
+				.col-lg-9.text-center
+					h1 Recent testimonials from our regular clients
+					p.block.block-lg.block-center Don't just take our word for it - see below our coaching testimonials below. Get a flavour of the real benefits from working with us.
+
+	section.section.section-xl.bg-white.parallax-js.parallax-js-box-1
+		.parallax-js-element-6: .layer( data-depth='.1' )
+			img(src="images/pjs-element-5.svg", alt="")
+		.parallax-js-element-7: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-6.svg", alt="")
+		.container
+			.row.row-60.row-xl-100
+				.col-12
+					.row.justify-content-center.row-50
+						.col-lg-9.col-xl-8.text-center
+							h2 We’ve helped millions of owners create a business that works.
+							p.block.block-lg.block-center Maecenas in luctus massa. Quisque id diam ac lectus cursus semper tincidunt sit amet ligula.
+						.col-lg-9
+							.group-65.d-flex.align-items-center.justify-content-center.flex-wrap
+								a.figure.figure-hover( href='#' )
+									+img('client-logo-1-164x37.png')
+								a.figure.figure-hover( href='#' )
+									+img('client-logo-2-164x41.png')
+								a.figure.figure-hover( href='#' )
+									+img('client-logo-3-164x25.png')
+								a.figure.figure-hover( href='#' )
+									+img('client-logo-4-164x29.png')
+				.col-12
+					.row.row-50.row-xl-60
+						.col-lg-6
+							+quote-with-video({
+								img: 'quote-with-video-1-600x444.jpg',
+								text: 'Coaches can help build a new business from the ground up, advising executives and owners.',
+								list: ['Douglas Adams', 'iStep Co.', 'Seattle, WA']
+							})
+						.col-lg-6
+							+quote-with-video({
+								img: 'quote-with-video-2-600x444.jpg',
+								text: 'Business coach is able to help business owners that have hit a plateau in their company’s.',
+								list: ['Elvin Thomas', 'TML Ltd.', 'Los Angeles, CA']
+							})
+						.col-lg-6
+							+quote-with-video({
+								img: 'quote-with-video-3-600x444.jpg',
+								text: 'Along with improving the growth of a business, though, such coaches are also able to ease some of the burdens.',
+								list: ['Frankie Walls', 'Advance Co.', 'New York, NY ']
+							})
+						.col-lg-6
+							+quote-with-video({
+								img: 'quote-with-video-4-600x444.jpg',
+								text: 'While running your own business can be very rewarding, there’s no denying that it can be very stressful as well.',
+								list: ['Joanna Kingsman', 'Kings Ltd.', 'Atlanta, GE']
+							})
+						.col-lg-6
+							+quote-with-video({
+								img: 'quote-with-video-5-600x444.jpg',
+								text: 'Working with a coach,  you’ll have someone in your corner who can assist you through the challenges.',
+								list: ['Ben Adams', 'BTMC Co.', 'Miami, FL']
+							})
+						.col-lg-6
+							+quote-with-video({
+								img: 'quote-with-video-6-600x444.jpg',
+								text: 'Coaches serve as a source of experience and expertise that you can rely on when the going gets tough.',
+								list: ['Matthew Turner', 'Quad Industries', 'San Diego, CA ']
+							})
+	include ../section/_section-quote
+
+	include ../footer/_footer-classic

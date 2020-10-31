@@ -1,0 +1,77 @@
+// Elements spacing
+h1 + p  {
+	margin-top: px-to-rem( 32px );
+}
+
+h1 + h4 {
+	margin-top: px-to-rem( 36px );
+}
+
+h4 + p {
+	margin-top: px-to-rem( 22px );
+}
+
+h2 + p {
+	margin-top: px-to-rem( 34px );
+}
+
+.text-medium-size + p {
+	margin-top: px-to-rem( 34px );
+}
+
+p + .btn {
+	margin-top: px-to-rem( 37px );
+	
+	@include media-breakpoint-up( lg ) {
+		margin-top: px-to-rem( 50px );
+	}
+}
+
+@include media-breakpoint-up(xl) {
+	h2 + .text-medium-size {
+		margin-top: px-to-rem( 44px );
+	}
+}
+
+// Group spacing
+html {
+	.group-5 {
+		@include group( px-to-rem( 5px ) );
+	}
+
+	.group-10 {
+		@include group( px-to-rem( 10px ) );
+	}
+
+	.group-15 {
+		@include group( px-to-rem( 15px ) );
+	}
+
+	.group-20 {
+		@include group( px-to-rem( 20px ) );
+	}
+
+	.group-30 {
+		@include group( px-to-rem( 30px ) );
+	}
+
+	.group-x-30 {
+		@include groupX( px-to-rem( 30px ) );
+	}
+
+	.group-40 {
+		@include group( px-to-rem( 40px ) );
+	}
+
+	.group-65 {
+		@include group( px-to-rem( 65px ) );
+	}
+}
+
+
+// inset
+@include media-breakpoint-up(md) {
+	.offset-md-90 {
+		padding-bottom: 90px;
+	}
+}

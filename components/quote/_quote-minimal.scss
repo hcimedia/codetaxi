@@ -1,0 +1,23 @@
+// quote minimal
+.quote-minimal {
+	
+}
+.quote-minimal-text {
+	font-family: $font-family-cursive;
+	font-weight: 400;
+}
+
+.quote-minimal-author {
+	
+	p {
+		font-size: px-to-rem( 18px );
+	}
+	
+	* + p {
+		margin-top: 0;
+	}
+}
+
+* + .quote-minimal-author {
+	margin-top: px-to-rem( 20px );
+}

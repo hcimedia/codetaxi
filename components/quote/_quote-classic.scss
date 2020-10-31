@@ -1,0 +1,50 @@
+// quote classic
+.quote-classic {
+	position: relative;
+	padding-top: 60px;
+	
+	&:before {
+		position: absolute;
+		content: url("../../images/quote.svg");
+		top: 0;
+		left: -15px;
+		
+		@include media-breakpoint-up( lg ) {
+			left: -30px;
+		}
+	}
+	
+	.quote-meta {
+		li {
+			color: $gray-200;
+		}
+		> li + li {
+			&:before {
+				background: $gray-200;
+			}
+		}
+	}
+}
+
+.quote-classic-text {
+	position: relative;
+	font-family: $font-family-cursive;
+	
+	q {
+		font-weight: 400;
+	}
+	
+}
+
+.quote-classic-bottom {
+	
+}
+
+.quote-classic-figure {
+	border-radius: 50%;
+	margin-right: px-to-rem(30px);
+}
+
+* + .quote-classic-bottom {
+	margin-top: px-to-rem( 40px );
+}

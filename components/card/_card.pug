@@ -1,0 +1,28 @@
+//- Card Classic
+	@param {object} obj - data object
+	@param {string} obj.subtitle - card subtitle
+	@param {string} obj.title - card title
+	@param {string} obj.text - card text
+	@param {string} obj.linkText - card linkText
+mixin card-classic( obj )
+	.card.card-classic&attributes( attributes )
+		.card-classic-figure
+			block
+		.card-classic-body
+			.card-classic-subtitle= obj.subtitle
+			h4.card-classic-title: a( href='#' )= obj.title
+			p= obj.text
+			a.btn.btn-arrow( href='#' )= obj.linkText
+
+//- Card with number
+	@param {object} obj - data object
+	@param {object} obj.num - number object
+	@param {object} obj.category - category object
+	@param {object} obj.title - title object
+mixin card-nubmer( obj )
+	.card.card-number
+		.card-number-body
+			h4.card-number-num= obj.num
+			p.card-number-category= obj.category
+			h6.card-number-title= obj.title
+			p= obj.text

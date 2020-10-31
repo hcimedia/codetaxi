@@ -1,0 +1,100 @@
+// qoute with video
+.quote-with-video {
+	position: relative;
+	display: flex;
+	justify-content: space-between;
+	background-size: cover;
+	flex-direction: column;
+	background-position: center;
+	background-repeat: no-repeat;
+	min-height: 444px;
+	background-color: $dark;
+	
+	&:before {
+		position: absolute;
+		content: '';
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: linear-gradient(180.69deg, rgba(32, 33, 49, 0) 47.7%, #202131 90.47%);
+		z-index:1;
+	} 
+	
+	> * {
+		position: relative;
+		z-index: 1;
+	}
+	
+	@include media-breakpoint-down(lg) {
+		max-width: 600px;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+
+.quote-with-video-header {
+	padding: 30px;
+	
+	@include media-breakpoint-up(lg){
+		padding: 40px;
+	}
+}
+
+.quote-with-video-btn {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 60px;
+	height: 60px;
+	border-radius: 50%;
+	border: 2px solid $white;
+	transition: $transition-base;
+	
+	svg {
+		fill: $white;
+		transition: $transition-base;
+	}
+	
+	&:hover {
+		background: $white;
+		
+		svg {
+			fill: $dark;
+		}
+	}
+}
+
+.quote-with-video-body {
+	padding: px-to-rem(30px);
+	
+	.h5 {
+		color: $white;
+	}
+	
+	@include media-breakpoint-up( lg ){
+		padding: 30px 50px 30px 40px;
+	}
+	
+	.quote-meta {
+		li {
+			color: $primary;
+		}
+		> li + li {
+			&:before {
+				background: $primary;
+			}
+		}
+	} 
+}
+
+
+* + .quote-with-video-body {
+	margin-top: 35px;
+}
+
+
+* + .quote-with-video-meta {
+	margin-top: 8px;
+}

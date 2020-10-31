@@ -1,0 +1,69 @@
+extends ../base/_skeleton
+
+include ../rd-navbar/_rd-navbar
+include ../post/_post
+
+block variables
+	- pageName = 'Solutions';
+
+block page
+	+rd-navbar
+
+	section.section.section-xxl.bg-layer.bg-layer-dark.bg-layer-gradient.bg-image.parallax-js.parallax-js-box-1.context-dark( style='background-image: url("images/bg-image-02.jpg");' )
+		.parallax-js-element-9: .layer( data-depth='.1' )
+			img(src="images/pjs-element-1.svg", alt="")
+		.parallax-js-element-10: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-2.svg", alt="")
+		.parallax-js-element-11: .layer( data-depth='.1' )
+			img(src="images/pjs-element-1.svg", alt="")
+		.parallax-js-element-12: .layer( data-depth='-.1' )
+			img(src="images/pjs-element-2.svg", alt="")
+		.parallax-js-element-13: .layer( data-depth='.1' )
+			img(src="images/pjs-element-8.svg", alt="")
+		.container
+			.row.justify-content-center
+				.col-lg-9.text-center
+					h1 Take a look at our solutions for your business
+					p.block.block-lg.block-center Our team of business coaches offers a wide variety of tips and solutions for all kinds of businesses.
+
+	section.section.section-xl.bg-white.parallax-js.parallax-js-box-1
+		.parallax-js-element-18: .layer( data-depth='.1' )
+			img(src="images/pjs-element-12.svg", alt="")
+		.container
+			.row.justify-content-center.row-50.row-xl-80
+				.col-lg-9.text-center
+					h1 A variety of ready-made solutions for you
+					p.block.block-lg.block-center At FinUp, we regularly publish new solutions for various types of companies and startups.
+
+				.col-sm-10.col-lg-6
+					+post-classic({
+						img: 'post-classic-1-630x334',
+						category: 'Teamwork',
+						title: 'What Does A Business Coach Do?',
+						text: 'In many cases, the challenges and goals of small businesses may differ from those of large…'
+					})
+				.col-sm-10.col-lg-6
+					+post-classic({
+						img: 'post-classic-2-630x334',
+						category: 'Tips',
+						title: 'Build the right team working the right way',
+						text: 'There’s a perception that business coaching services exist only to help owners with struggling or faltering…'
+					})
+				.col-sm-10.col-lg-6
+					+post-classic({
+						img: 'post-classic-3-630x334',
+						category: 'Startup',
+						title: 'What Can A Business Coach Help With?',
+						text: 'Ut id eleifend elit, sodales amet ametess consectetur odiounct fringilla ipsum in enim fringilla. In many…'
+					})
+				.col-sm-10.col-lg-6
+					+post-classic({
+						img: 'post-classic-4-630x334',
+						category: 'Coaching',
+						title: 'Is A Small Business Coach Different?',
+						text: 'The goals will be ones that you need to hit in order to efficiently grow and…'
+					})
+					
+	include ../section/_section-quote
+
+	include ../footer/_footer-classic
