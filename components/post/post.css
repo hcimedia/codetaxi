@@ -1,2 +1,95 @@
-.post-minimal {	position: relative;	box-shadow: 2px 12px 28px rgba(12, 13, 31, 0.1);	transition: all 0.2s ease-in-out;}.post-minimal:hover {	box-shadow: none;}.post-minimal:hover .post-minimal-caption {	background: #FA7161;}.post-minimal:hover .post-minimal-category {	color: #fff;}.post-minimal:hover .post-minimal-title a {	color: #fff;}.post-minimal-caption {	padding: 1.875rem;	background: #fff;	transition: all 0.2s ease-in-out;}.post-minimal-caption * + * {	margin-top: 10px;}.post-minimal-caption * {	transition: all 0.2s ease-in-out;}.post-minimal-figure img {	width: 100%;}.post-minimal-category {	color: #FA7161;	font-size: 0.9375rem;	text-transform: uppercase;	font-weight: 500;}.post-minimal-title a:hover {	color: #fff;	text-decoration: underline;}.owl-carousel.owl-style-1 .post-minimal {	margin-left: 30px;	margin-right: 30px;}.post-video {	max-width: 400px;	margin-left: auto;	margin-right: auto;}.post-video-figure {	position: relative;}.post-video-figure .btn-video {	position: absolute;	top: 50%;	left: 50%;	transform: translate(-50%, -50%);}.post-video-caption {	padding-top: 20px;}.post-video-category {	color: #FA7161;	font-size: 0.9375rem;	text-transform: uppercase;	font-weight: 500;}* + .post-video-title {	margin-top: 10px;}.post-classic {	background: #fff;	box-shadow: 4px 24px 45px rgba(12, 13, 31, 0.1);}.post-classic:hover .post-classic-figure img {	transform: scale(1.02);}.post-classic-category {	color: #FA7161;	font-size: 0.9375rem;	text-transform: uppercase;	font-weight: 500;}.post-classic-figure {	position: relative;	overflow: hidden;}.post-classic-figure img {	transition: all 0.2s ease-in-out;	will-change: transform;}.post-classic-caption {	padding: 30px;}* + .post-classic-title {	margin-top: 0.625rem;}* + .post-classic-text {	margin-top: 1.0625rem;}@media (min-width: 992px) {	.post-classic-caption {		padding-right: 50px;	}}
-/*# sourceMappingURL=post.css.map */
+.post-minimal {
+  position: relative;
+  box-shadow: 2px 12px 28px rgba(12, 13, 31, 0.1);
+  transition: all 0.2s ease-in-out; }
+  .post-minimal:hover {
+    box-shadow: none; }
+    .post-minimal:hover .post-minimal-caption {
+      background: #febd22; }
+    .post-minimal:hover .post-minimal-category {
+      color: #fff; }
+    .post-minimal:hover .post-minimal-title a {
+      color: #fff; }
+
+.post-minimal-caption {
+  padding: 1.875rem;
+  background: #fff;
+  transition: all 0.2s ease-in-out; }
+  .post-minimal-caption * + * {
+    margin-top: 10px; }
+  .post-minimal-caption * {
+    transition: all 0.2s ease-in-out; }
+
+.post-minimal-figure img {
+  width: 100%; }
+
+.post-minimal-category {
+  color: #febd22;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.post-minimal-title a:hover {
+  color: #fff;
+  text-decoration: underline; }
+
+.owl-carousel.owl-style-1 .post-minimal {
+  margin-left: 30px;
+  margin-right: 30px; }
+
+.post-video {
+  max-width: 400px;
+  margin-left: auto;
+  margin-right: auto; }
+
+.post-video-figure {
+  position: relative; }
+  .post-video-figure .btn-video {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+
+.post-video-caption {
+  padding-top: 20px; }
+
+.post-video-category {
+  color: #febd22;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+* + .post-video-title {
+  margin-top: 10px; }
+
+.post-classic {
+  background: #fff;
+  box-shadow: 4px 24px 45px rgba(12, 13, 31, 0.1); }
+  .post-classic:hover .post-classic-figure img {
+    transform: scale(1.02); }
+
+.post-classic-category {
+  color: #febd22;
+  font-size: 0.9375rem;
+  text-transform: uppercase;
+  font-weight: 500; }
+
+.post-classic-figure {
+  position: relative;
+  overflow: hidden; }
+  .post-classic-figure img {
+    transition: all 0.2s ease-in-out;
+    will-change: transform; }
+
+.post-classic-caption {
+  padding: 30px; }
+
+* + .post-classic-title {
+  margin-top: 0.625rem; }
+
+* + .post-classic-text {
+  margin-top: 1.0625rem; }
+
+@media (min-width: 992px) {
+  .post-classic-caption {
+    padding-right: 50px; } }

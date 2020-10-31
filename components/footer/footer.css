@@ -1,2 +1,21 @@
-.footer-classic-form h6 + .form-inline-custom {	margin-top: 0.4375rem;}* + .footer-classic-form {	margin-top: 3.125rem;}.footer-classic-bottom {	padding-top: 4.375rem;}@media (min-width: 992px) {	.footer-classic-bottom {		padding-top: 5.3125rem;	}}@media (min-width: 1200px) {	.footer-classic-bottom {		padding-top: 6.25rem;	}}@media (min-width: 1600px) {	.footer-classic-bottom {		padding-top: 7.5rem;	}}@media (min-width: 1200px) {	* + .footer-classic-form {		margin-top: 4.375rem;	}}
-/*# sourceMappingURL=footer.css.map */
+.footer-classic-form h6 + .form-inline-custom {
+  margin-top: 0.4375rem; }
+
+* + .footer-classic-form {
+  margin-top: 3.125rem; }
+
+.footer-classic-bottom {
+  padding-top: 4.375rem; }
+  @media (min-width: 992px) {
+    .footer-classic-bottom {
+      padding-top: 5.3125rem; } }
+  @media (min-width: 1200px) {
+    .footer-classic-bottom {
+      padding-top: 6.25rem; } }
+  @media (min-width: 1600px) {
+    .footer-classic-bottom {
+      padding-top: 7.5rem; } }
+
+@media (min-width: 1200px) {
+  * + .footer-classic-form {
+    margin-top: 4.375rem; } }
